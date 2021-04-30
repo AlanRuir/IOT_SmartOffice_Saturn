@@ -1,0 +1,7 @@
+<view>
+  <image class="imageClass" src="/imgs/index.jpg" mode="widthFix"/>
+  <view class="textClass">登录即可控制智能设备，畅享品质办公体验</view>
+  <view class="buttonClass">
+    <van-button size="large" round type="info" type="primary" bindtap="reLaunchLoginOrController">立即登录</van-button>
+  </view>
+</view>

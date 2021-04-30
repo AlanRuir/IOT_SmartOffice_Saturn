@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/controller/controller",
+    "pages/userinfo/userinfo",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "土星办公",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-panel": "@vant/weapp/panel/index"
+  }
+}

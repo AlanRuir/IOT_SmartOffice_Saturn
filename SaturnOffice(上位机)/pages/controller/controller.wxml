@@ -1,0 +1,126 @@
+<view class="topAndButtomes"></view>
+<view class="controllerHeader">
+  <text class="userNameClass">{{userName}}的办公区：{{isOnline}}</text>
+  <view class="logoClass">
+    <navigator open-type="navigate" url="/pages/userinfo/userinfo">
+      <van-image
+      round
+      width="2rem"
+      height="2rem"
+      cover
+      src="https://img.yzcdn.cn/vant/cat.jpeg"
+      />
+    </navigator>
+  </view>
+</view>
+<view class="topAndButtomes"></view>
+<swiper class="banner">
+  <swiper-item>
+    <view class="bannerItem">
+      <image src="/imgs/fengshan.jpg"/>
+      <view class="Controller">
+        <view class="airFanSwitchClass">
+          <view>
+            <text>风扇开关</text>
+          </view>
+          <view class="topAndButtomes"></view>
+          <view>
+            <van-switch checked="{{0 == AirFanSwitch ? flase : true}}" size="30px" bind:change="onAirFanSwitchChange"/>
+          </view>
+        </view>
+        <view class="airFanLevelClass">
+          <view>
+            <text>风力等级</text>
+          </view>
+          <view>
+            <van-slider min="0" max="100" value="{{AirFanLevel / 10}}" bind:change="onAirFanLevelChange" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="index">1/4</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="bannerItem">
+      <image src="/imgs/humb.jpg"/>
+      <view class="Controller">
+        <text class="leftNbspClass"></text>
+        <van-circle size="150"
+        value="{{Temperature * 2.5}}" 
+        color="{{ gradientColor }}"/>
+        <text class="nbspClass"></text>
+        <van-circle size="150"
+        value="{{Humidity * 2}}" 
+        color="{{ gradientColor }}"/>
+        <view class="tempsOrHumisTextClass">
+          <text class="humisClass">温度：{{Temperature}}摄氏度</text>
+          <text class="textNbspesClass"></text>
+          <text class="tempsClass">湿度：{{Humidity}}%</text>
+        </view>
+      </view>
+    </view>
+    <view class="index">2/4</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="bannerItem">
+      <image src="/imgs/light.jpg"/>
+      <view class="Controller">
+        <view class="lightSwitchClass">
+            <view>
+              <text>主灯开关</text>
+            </view>
+            <view class="topAndButtomes"></view>
+            <view>
+              <van-switch checked="{{0 == LightSwitch ? flase : true}}" size="30px" bind:change="onLightSwitchChange"/>
+            </view>
+          </view>
+          <view class="lightLevelClass">
+            <view>
+              <text>光度等级</text>
+            </view>
+            <view>
+              <van-slider min="0" max="100" value="{{LightLevel / 10}}" bind:change="onLightLevelChange" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="index">3/4</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="bannerItem">
+      <image src="/imgs/usbs.jpg"/>
+      <view class="Controller">
+        <view class="switchClass">
+          <view class="switchsClass">
+            <view>
+              <text>拓展开关1</text>
+            </view>
+            <view class="leftAndRightClass"></view>
+            <view>
+              <van-switch checked="{{0 == Switch1 ? flase : true}}" size="30px" bind:change="onSwitch1Change"/>
+            </view>
+          </view>
+          <view class="switchsClass">
+            <view>
+              <text>拓展开关2</text>
+            </view>
+            <view class="leftAndRightClass"></view>
+            <view>
+              <van-switch checked="{{0 == Switch2 ? flase : true}}" size="30px" bind:change="onSwitch2Change"/>
+            </view>
+          </view>
+          <view class="switchsClass">
+            <view>
+              <text>拓展开关3</text>
+            </view>
+            <view class="leftAndRightClass"></view>
+            <view>
+              <van-switch checked="{{0 == Switch3 ? flase : true}}" size="30px" bind:change="onSwitch3Change"/>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="index">4/4</view>
+  </swiper-item>
+</swiper>

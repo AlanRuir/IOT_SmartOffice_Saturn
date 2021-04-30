@@ -1,0 +1,15 @@
+.imageClass{
+  margin-top: 40%;
+  width: 100%;
+}
+
+.textClass{
+  text-align: center;
+  font-family: "黑体";
+}
+
+.buttonClass{
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 50%;
+}

@@ -1,0 +1,29 @@
+<view>
+  <van-cell-group>
+    <van-field
+      value="{{ userName }}"
+      clearable
+      bind:input="getUserName"
+      label="用户名"
+      placeholder="请输入用户名"
+    />
+    <van-field
+      value="{{ deviceId }}"
+      clearable
+      bind:input="getDeviceId"
+      label="设备ID"
+      placeholder="请输入设备ID"
+    />
+    <van-field
+      value="{{ apiKey }}"
+      type="password"
+      bind:input="getApiKey"
+      label="设备密钥"
+      placeholder="请输入设备密钥"
+      border="{{ false }}"
+    />
+    <view class="buttonClass">
+    <van-button size="large" round type="info" type="primary" bindtap="relaunchController">立即登录</van-button>
+  </view>
+</van-cell-group>
+</view>

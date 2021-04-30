@@ -1,0 +1,9 @@
+.buttonClass{
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 85%;
+}
+
+.topAndButtomClass{
+  margin-bottom: 5%;
+}
